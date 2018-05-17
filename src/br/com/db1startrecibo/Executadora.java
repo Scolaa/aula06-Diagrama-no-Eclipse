@@ -7,6 +7,7 @@ public class Executadora {
 		exibirCepFormatado(87055555);
 		exibirCepFormatado(87033333);
 		exibirCepFormatado(87022222);
+		exibirCpfFormatado("08316461951");
 		
 	}
 
@@ -16,4 +17,10 @@ public class Executadora {
 		System.out.println(endereco.getCepFormatado());
 	}
 	
+	private static void exibirCpfFormatado(String cpfSemFormatacao){
+		Emitente emitente = new Emitente();
+		emitente.setDocumentoCpf(cpfSemFormatacao);
+		System.out.println(emitente.getDocumentoCpf());
+	}
+
 }
